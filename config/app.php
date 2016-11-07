@@ -167,6 +167,11 @@ return [
          * Package Service Providers...
          */
         PrettyRoutes\ServiceProvider::class,
+        Laratrust\LaratrustServiceProvider::class,
+        Spatie\Tags\TagsServiceProvider::class,
+        Spatie\UrlSigner\Laravel\UrlSignerServiceProvider::class,
+        Spatie\FailedJobMonitor\FailedJobMonitorServiceProvider::class,
+        Spatie\Activitylog\ActivitylogServiceProvider::class,
         //
 
         /*
@@ -225,7 +230,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Laratrust'   => Laratrust\LaratrustFacade::class,
+        'UrlSigner' => Spatie\UrlSigner\Laravel\UrlSignerFacade::class,
     ],
 
 ];
