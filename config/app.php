@@ -166,7 +166,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        PrettyRoutes\ServiceProvider::class,
         //
 
         /*
