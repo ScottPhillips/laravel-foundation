@@ -172,6 +172,9 @@ return [
         Spatie\UrlSigner\Laravel\UrlSignerServiceProvider::class,
         Spatie\FailedJobMonitor\FailedJobMonitorServiceProvider::class,
         Spatie\Activitylog\ActivitylogServiceProvider::class,
+        /*Brotzka\DotenvEditor\DotenvEditorServiceProvider::class,*/
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
         //
 
         /*
@@ -232,6 +235,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Laratrust'   => Laratrust\LaratrustFacade::class,
         'UrlSigner' => Spatie\UrlSigner\Laravel\UrlSignerFacade::class,
+        'DotenvEditor' => Brotzka\DotenvEditor\DotenvEditorFacade::class,
     ],
 
 ];
